@@ -1,0 +1,356 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'open sans';
+}
+.contenedor{
+    padding: 60px;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+.titulo{
+    color: #4A6542;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+header{
+    width: 100%;
+    height: 550px;
+    background: -webkit-linear-gradient(to right, hsla(80, 73%, 50%,0.671),hsla(147, 50%, 47%,0.616)),url(../recursosvisuales/fondoinicio.png);
+    background: linear-gradient(to right, hsla(80, 73%, 50%,0.671),hsla(147, 50%, 47%,0.616)),url(../recursosvisuales/fondoinicio.png);
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+nav{
+    text-align: right;
+    padding: 30px 50px 0 0;
+
+}
+nav> a{
+    color: #ffff;
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 25px;
+}
+nav > a:hover{
+    text-decoration: underline;
+}
+.wave{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+header .textos-header{
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.textos-header h1{
+    font-size: 50px;
+    color: white;
+}
+
+.contenedorprogramaciondiv{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.coding{
+    width: 48%;
+}
+.contenedorprogramaciondiv .contenedortextos{
+    width: 48%;
+}
+.contenedortextos h3{
+    margin-bottom: 15px;
+}
+.contenedortextos h3 span{
+    background: #5A7E4F;
+    color: white;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    padding: 4px;
+    box-shadow: 0 0 6px 0 rgba(0,0,0,.5);
+    margin-right: 5px;
+}
+.contenedortextos p{
+    padding: 0px 0px 30px 15px;
+    font-weight: 300;
+    text-align: justify;
+}
+.boton{
+    align-items: center;
+    width: 250px;
+    height: 50px;
+    background-color: #4A6542;
+    border-radius: .5em;
+    cursor: pointer;
+    transition: background-color 1s;
+    text-align:center;
+    font-size: 2em;
+    font-weight: bold;
+    color: #ffffff;
+    line-height: 1.6em;
+    margin: 10px;
+    margin-left: 550px;
+}
+.boton:hover{
+    background-color: lightgreen;
+}
+.boton p{
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    color: #ffffff;
+    line-height: 1.6em;
+    margin:auto;
+
+}
+.waveinscripciones{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.headerinscripciones{
+    width: 100%;
+    height: 220px;
+    background: -webkit-linear-gradient(to right, hsla(80, 73%, 50%,0.671),hsla(147, 50%, 47%,0.616)),url(../recursosvisuales/fondoinicio.png);
+    background: linear-gradient(to right, hsla(80, 73%, 50%,0.671),hsla(147, 50%, 47%,0.616)),url(../recursosvisuales/fondoinicio.png);
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+.cabecerainscripciones{
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: baseline;
+    justify-content: right;
+    flex-direction: column;
+    padding-left: 20px;
+}
+
+.cabecerainscripciones h1{
+    font-size: 40px;
+    color: white;
+}
+.flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+.formulario1{
+    position: relative;
+    width: 1000px;
+    background: #AADA64;
+    padding: 30px;
+    margin: auto;
+    margin-top: 0px;
+    border-radius: 4px;
+    font-family: 'calibri';
+    word-wrap: break-word;
+    color: white;
+}
+#resultadoTexto {
+    width: 450px; /* Ancho del textarea */
+    height: 200px; /* Altura del textarea */
+    margin: 20px auto; /* Centrar el textarea horizontalmente y agregar margen superior e inferior */
+    display: block; /* Para centrar correctamente con 'auto' */
+    padding: 10px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    border: 2px solid #4A6542;
+    border-radius: 15px;
+    resize: none; /* Evitar que el usuario pueda redimensionar el textarea */
+    margin-bottom: 20px;
+    background-color: blanchedalmond;
+
+}
+.barras-container {
+    width: 500px;
+    margin: 20px auto;
+    background-color: aliceblue;
+    border: 2px solid #4A6542;
+    border-radius: 15px;
+    overflow: hidden;
+    display: inline-block; /* Cambiar a inline-block para que el contenedor esté al lado del textarea */
+    vertical-align: top; /* Alinear la parte superior del contenedor con la parte superior del textarea */
+    margin-left: 20px; /* Agregar margen izquierdo para separar el contenedor del textarea */
+}
+
+#barrasCanvas {
+    display: block;
+    margin: 0 auto;
+}
+#resultadodecifrar {
+    width: 450px; /* Ancho del textarea */
+    height: 200px; /* Altura del textarea */
+    margin: 20px auto; /* Centrar el textarea horizontalmente y agregar margen superior e inferior */
+    display: block; /* Para centrar correctamente con 'auto' */
+    padding: 10px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    border: 2px solid #4A6542;
+    border-radius: 15px;
+    resize: none; /* Evitar que el usuario pueda redimensionar el textarea */
+    margin-bottom: 20px;
+    background-color: blanchedalmond;
+}
+.formulario2{
+    position: relative;
+    width: 1000px;
+    background: #96D079;
+    padding: 30px;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 4px;
+    font-family: 'calibri';
+    color: white;
+}
+.formulario3{
+    position: relative;
+    width: 1000px;
+    background: #83C98A;
+    padding: 30px;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 4px;
+    font-family: 'calibri';
+    color: white;
+}
+
+.datosuno{
+    width: 100%;
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    border: #5A7E4F;
+    font-family: 'calibri';
+}
+.cuadrotextocifrar{
+    width: 100%;
+    height: 100px;
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    border: 1px solid #5A7E4F;
+    word-wrap: break-word;
+    font-family: 'calibri';
+}
+.datosdos{
+    width: 100%;
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    border: #5A7E4F;
+}
+.datostres{
+    width: 100%;
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    border: #5A7E4F;
+}
+
+.Registrarse{
+    width: 50%;
+    background: #4A6542;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    margin-left: 380px;
+    font-size: 16px;
+    border-radius: 10px;
+}
+.soportelogin{
+    position: relative;
+    width: 700px;
+    background: #76C29B;
+    padding: 30px;
+    margin: auto;
+    margin-top: 0px;
+    border-radius: 4px;
+    font-family: 'calibri';
+    color: white;
+}
+.soportelogin h1{
+    text-align: center;
+}
+.ingresoadmin{
+    width: 30%;
+    background: #4A6542;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    margin-left: 220px;
+    font-size: 16px;
+    border-radius: 10px;
+}
+.secciondescargarreporte{
+
+    position: relative;
+}
+.descargarreporte{
+    width: 250px;
+    height: 50px;
+    background-color: #4A6542;
+    border-radius: .5em;
+    cursor: pointer;
+    transition: background-color 1s;
+    text-align:center;
+    font-size: 2em;
+    font-weight: bold;
+    color: #ffffff;
+    line-height: 1.6em;
+    margin: 10px;
+}
+.Descargar{
+    color: #76C29B;
+}
+.borrarequipos{
+    position: relative;
+}
+
+.borrar{
+    border: solid 1px black;
+    position: absolute;
+    padding: 20px;
+    width: 600px;
+    margin: 10px;
+}
+th, td{
+    border: solid 1px #5A7E4F;
+}
+
+.borrar.thead{
+    background-color: #4A6542;
+    border-bottom: solid 5px #76C29B;
+    color: white;
+
+}
+.boton_borrar{
+    margin-top: 130px;
+    margin-left: 10px;
+}

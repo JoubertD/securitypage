@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Modulo de Cifrado</title>
+    <link rel="shorcut icon" href="recursosvisuales/Logo.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Gentium+Plus:ital@1&display=swap" rel="stylesheet">
+    <script src="cifradoafin.js"></script>
+</head>
+<body>
+<header class="headerinscripciones">
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="descifrar.html">Decifrar</a>
+        <a href="Soporte.html">Mira Aqui</a>
+    </nav>
+    <section class="cabecerainscripciones">
+        <h1> Modulo de Cifrado</h1>
+    </section>
+    <div class="waveinscripciones" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #fff;"></path></svg></div>
+</header>
+<form>
+<section class="formulario1">
+        <h3> Modulo de Cifrado</h3>
+        <input class= "cuadrotextocifrar" type="text" name="identificacionuno" id="textoacifrar" placeholder="Ingrese el texto a cifrar:" required>
+        <input class= "datosuno" type="text" name="nombresuno" id="valor_a" placeholder="Ingrese el valor de 'a':" required>
+        <input class= "datosuno" type="text" name="correouno" id="valor_b" placeholder="Ingrese el valor de 'b':" required>
+
+</section>
+<input class="Registrarse" type="button" value="Cifrar" onclick="cifrartexto()">
+</form>
+<div class="flex-container">
+    <textarea id="resultadoTexto" rows="4" cols="50" readonly></textarea>
+    <div class="barras-container">
+        <canvas id="barrasCanvas" width="500" height="200"></canvas>
+    </div>
+</div>
+</body>
+</html>
